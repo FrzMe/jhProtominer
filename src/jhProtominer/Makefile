@@ -11,7 +11,7 @@ all: $(app)
 	$(CXX) $(CFLAGS) -c -o $@ $<
 
 jhProtominer: $(obj)
-	$(CXX) $(LDFLAGS) -o $@ $(obj)  -lpthread -lstdc++
+	$(CXX) $(LDFLAGS) -o $@ $(obj) -lpthread
 
 clean:
 	$(RM) *.o $(app)
